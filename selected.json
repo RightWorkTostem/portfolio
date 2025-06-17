@@ -1,0 +1,143 @@
+[
+  {
+    "lat": 12.9086641,
+    "lon": 77.6341012,
+    "name": "Right Work Decor",
+    "position": "CEO",
+    "image": "images/tostem.png"
+  },
+  {
+    "lat": 12.9199595,
+    "lon": 77.6891997,
+    "name": "Mr. Dhiresh Bansal",
+    "position": "Villa-16, Meesho CFO",
+    "image": "images/2.jpg"
+  },
+    {
+    "lat": 13.1285302,
+    "lon": 76.2497523,
+    "name": "Yash Farm House",
+    "position": "Sandalwood Actor",
+    "image": "images/2.jpg"
+  },
+  {
+    "lat": 12.9207853,
+    "lon": 77.6903174,
+    "name": "Mr. Naren Ravula",
+    "position": "Villa-67, Flipkart Vice President",
+    "image": "images/2.jpg"
+  },
+  {
+    "lat": 12.9207661,
+    "lon": 77.6906854,
+    "name": "Mr.Sudhakar Palisetti",
+    "position": "Villa-78, Founder and CEO at Cerium Systems",
+    "image": "images/2.jpg"
+  },
+  {
+    "lat": 12.9215739,
+    "lon": 77.6908969,
+    "name": "Mr. Srinivas Reddy",
+    "position": "Villa-87, Evo Homes Founder",
+    "image": "images/2.jpg"
+  },
+  {
+    "lat": 12.9210034,
+    "lon": 77.6934899,
+    "name": "Mr.Subhakar Reddy",
+    "position": "Villa-177",
+    "image": "images/subhakarreddy.jpg"
+  },
+  {
+    "lat": 12.9238878,
+    "lon": 77.6928184,
+    "name": "Mr.Vikash Bansal",
+    "position": "Villa-344, Co-owner and Executive Director at Geown Properties",
+    "image": "images/2.jpg"
+  },
+  {
+    "lat": 13.0208108,
+    "lon": 77.5770194,
+    "name": "Mr.Shyam Dhaga",
+    "position": "Managing Director at Archidply Industries",
+    "image": "images/daga.png"
+  },
+  {
+    "lat": 13.0367604,
+    "lon": 77.6084811,
+    "name": "Mr.Mahabir Somani",
+    "position": "Managing Director at Somani Plywood",
+    "image": "images/2.jpg"
+  },
+  {
+    "lat": 12.8465042,
+    "lon": 77.8106291,
+    "name": "Ms. Mabel Chacko",
+    "position": "Co-founder of the neobanking platform Open",
+    "image": "images/2.jpg"
+  },
+  {
+    "lat": 12.8461002,
+    "lon": 77.8151713,
+    "name": "Mr. Umesh Malhotra",
+    "position": "CEO at Hippocampus Learning Centres",
+    "image": "images/2.jpg"
+  },
+  {
+    "lat": 13.2127793,
+    "lon": 77.6239303,
+    "name": "Mr. Somnath Das",
+    "position":" ",
+    "image": "images/2.jpg"
+  },
+  {
+    "lat": 12.8416763,
+    "lon": 77.7233816,
+    "name": "Mr. Satyanarayana Reddy K.S",
+    "position":"Villa-179, CEO at DSR Infrastructure Pvt Ltd",
+    "image": "images/pavanreddy.JPG"
+  },
+  {
+    "lat": 13.0076549,
+    "lon": 77.5800331,
+    "name": "Mr. Pankaj Kapasi",
+    "position":" ",
+    "image": "images/2.jpg"
+  },
+  {
+    "lat": 12.9132285,
+    "lon": 77.6361648,
+    "name": "Dr. Manmohan Reddy",
+    "position":"Co-founder and Executive Director of Iconhomz",
+    "image": "images/2.jpg"
+  },
+  {
+    "lat": 12.9137898,
+    "lon": 77.755959,
+    "name": "Mr. Ramakrishna",
+    "position":" ",
+    "image": "images/2.jpg"
+  },
+  {
+    "lat": 13.0068598,
+    "lon": 77.5462596,
+    "name": "Mr. Bhinshu Sulthaniya",
+    "position":" ",
+    "image": "images/2.jpg"
+  },
+  {
+    "lat": 12.3020745,
+    "lon": 76.6336546,
+    "name": "Mr. Amarnath",
+    "position":" ",
+    "image": "images/2.jpg"
+  },
+  {
+    "lat": 13.2051834,
+    "lon": 77.6346812,
+    "name": "Mr. Vivek Agarwal",
+    "position":"Swiss Town",
+    "image": "images/2.jpg"
+  }
+
+]
