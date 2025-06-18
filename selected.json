@@ -3,7 +3,7 @@
     "lat": 12.9086641,
     "lon": 77.6341012,
     "name": "Right Work Decor",
-    "position": "CEO",
+    "position": "TOSTEM STUDIO",
     "image": "images/tostem.png"
   },
   {
@@ -25,7 +25,7 @@
     "lon": 77.6903174,
     "name": "Mr. Naren Ravula",
     "position": "Villa-67, Flipkart Vice President",
-    "image": "images/2.jpg"
+    "image": "images/naren.jpg"
   },
   {
     "lat": 12.9207661,
@@ -115,7 +115,7 @@
     "lat": 12.9137898,
     "lon": 77.755959,
     "name": "Mr. Ramakrishna",
-    "position":" ",
+    "position":"Director of Pleasure Spaces",
     "image": "images/2.jpg"
   },
   {
