@@ -101,10 +101,10 @@ GroupedLayerControl(
 
 # Modal HTML (single image carousel)
 modal_html = """
-<div id="customModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%;
-     background:rgba(0,0,0,0.7); z-index:9999; justify-content:center; align-items:center;">
-  <div style="background:white; padding:30px; border-radius:10px; max-width:80%; width:1000px;
-       max-height:80%; overflow:hidden; position:relative;">
+<div id="customModal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh;
+     background:rgba(0,0,0,0.7); z-index:9999; display:flex; justify-content:center; align-items:center; padding:20px; box-sizing:border-box;">
+  <div style="background:white; padding:30px; border-radius:12px; width:100%; max-width:1000px;
+       max-height:90vh; overflow:auto; position:relative; box-sizing:border-box;">
     
     <span onclick="document.getElementById('customModal').style.display='none'"
           style="position:absolute; top:15px; right:25px; font-size:28px; font-weight:bold; color:#333; cursor:pointer;">
@@ -122,6 +122,7 @@ modal_html = """
   </div>
 </div>
 """
+
 
 # Modal JS (single image with navigation)
 modal_js = """
