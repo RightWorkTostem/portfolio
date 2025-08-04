@@ -99,15 +99,15 @@ GroupedLayerControl(
     collapsed=False
 ).add_to(m)
 
-# Modal HTML (single image carousel)
+# Modal HTML
 modal_html = """
 <div id="customModal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh;
-     background:rgba(0,0,0,0.7); z-index:9999; display:flex; justify-content:center; align-items:center; padding:20px; box-sizing:border-box;">
+     background:rgba(0,0,0,0.7); z-index:9999; justify-content:center; align-items:center; padding:20px; box-sizing:border-box;">
   <div style="background:white; padding:30px; border-radius:12px; width:100%; max-width:1000px;
        max-height:90vh; overflow:auto; position:relative; box-sizing:border-box;">
     
     <span onclick="document.getElementById('customModal').style.display='none'"
-          style="position:absolute; top:15px; right:25px; font-size:28px; font-weight:bold; color:#333; cursor:pointer;">
+          style="position:absolute; top:15px; right:25px; font-family:Georgia, serif;font-size:28px; font-weight:bold; color:#333; cursor:pointer;">
       &times;
     </span>
 
@@ -123,24 +123,27 @@ modal_html = """
 </div>
 """
 
-
-# Modal JS (single image with navigation)
+# Modal JS
 modal_js = """
 <script>
   let currentIndex = 0;
   let modalImages = [];
+  let currentName = "";
+  let currentPosition = "";
 
   function openPopupModal(name, position, images) {
     modalImages = images;
+    currentName = name;
+    currentPosition = position;
     currentIndex = 0;
-    updateModalContent(name, position);
+    updateModalContent();
     document.getElementById('customModal').style.display = 'flex';
   }
 
-  function updateModalContent(name, position) {
+  function updateModalContent() {
     let content = `
-      <h2 style='margin:0 0 5px 0; color:#1d4b7f; font-family:Georgia, serif; font-size:28px;'>${name}</h2>
-      <p style='margin:0 0 20px 0; color:#666; font-family:Georgia, serif; font-size:16px;'>${position}</p>
+      <h2 style='margin:0 0 5px 0; color:#1d4b7f; font-family:Georgia, serif; font-size:28px;'>${currentName}</h2>
+      <p style='margin:0 0 20px 0; color:#666; font-family:Georgia, serif; font-size:16px;'>${currentPosition}</p>
       <div style='display:flex; justify-content:center; align-items:center;'>
         <img src="${modalImages[currentIndex]}" style="max-width:90%; max-height:500px; border-radius:10px;" />
       </div>
@@ -151,34 +154,22 @@ modal_js = """
   document.getElementById("prevBtn").onclick = function() {
     if (modalImages.length > 0) {
       currentIndex = (currentIndex - 1 + modalImages.length) % modalImages.length;
-      updateModalContent(currentName, currentPosition);
+      updateModalContent();
     }
   };
 
   document.getElementById("nextBtn").onclick = function() {
     if (modalImages.length > 0) {
       currentIndex = (currentIndex + 1) % modalImages.length;
-      updateModalContent(currentName, currentPosition);
+      updateModalContent();
     }
   };
-
-  // Maintain state across navigation
-  let currentName = "";
-  let currentPosition = "";
-  function openPopupModal(name, position, images) {
-    currentName = name;
-    currentPosition = position;
-    modalImages = images;
-    currentIndex = 0;
-    updateModalContent(name, position);
-    document.getElementById('customModal').style.display = 'flex';
-  }
 </script>
 """
 
-# Inject HTML and JS
+# Inject HTML and JS into map
 m.get_root().html.add_child(Element(modal_html))
 m.get_root().html.add_child(Element(modal_js))
 
-# Save map
+# Save
 m.save("index.html")
